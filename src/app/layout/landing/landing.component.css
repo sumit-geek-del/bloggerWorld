@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+.trending_div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 2rem 5rem;
+    /* background-color: rgba(156, 158, 254, 0.5); */
+    background-color: rgba(33, 99, 232, 0.3);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+.trending_btn{
+    display: inline-flex;
+}
+
+.trending_btn button{
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.8rem;
+    padding: 0.5rem 3rem;
+    background-color: #1B9CFC;
+    color: #fff;
+    
+
+}
+
+.trending_carasouel{
+    display: inline-block;
+    width: 80vw;
+    margin-left: 2rem;
+}
+
+.left_card{
+    margin-top: 3.5rem;
+    margin-left: 5rem;
+    height: 560px;
+    position: absolute;
+    margin-bottom: 4rem;
+}
+
+.left_card img{
+    width: 39vw;
+    background-size: cover;
+    background-position: center left;
+    border-radius: 1rem;
+}
+
+.left_card span{
+    font-weight: 500;
+    padding: 0.6rem 2rem;
+    position: absolute;
+    left: 43px;
+    bottom: 173px;
+    font-size: 1.4rem;
+}
+
+.left_card_h1{
+    position: absolute;
+    bottom: 44px;
+    left: 37px;
+}
+
+
+.left_card_h1 h1{
+    font-size: 4rem;
+    word-wrap: break-word;
+    color: rgba(255, 255, 255, 1);
+    line-height: 1.25;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    display: inline-block;
+}
+.left_card_p{
+    position: absolute;
+    bottom: 4px;
+    left: 35px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.left_card_p p{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+}
+
+.left_card_last_div{
+    position: absolute;
+    bottom: -43px;
+    display: flex;
+}
+
+.left_card_last_div img{
+    object-fit: cover;
+    width: 10%;
+    display: inline-block;
+}
+
+.left_card_last_div ul li{
+    color: #fff;
+    float: left;
+    margin: 0 1.8rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.hover_effect::after{
+ 
+        content: '';
+        width: 0px;
+        height: 3px;
+        display: block;
+        background: #fff;
+        transition: 300ms;
+      
+}
+
+.hover_effect:hover::after {
+    width: 60%;
+  }

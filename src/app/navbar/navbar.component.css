@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+
+.navbar-brand{
+    font-size: 3rem;
+    margin-left: 2rem;
+    font-weight: 600;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+    /* color: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    color: #319DA0;
+}
+
+.white_color{
+    color: #fff;
+}
+.black-color{
+    color: #000;
+}
+
+
+
+
+#navbarNav ul li a{
+    font-size: 2rem;
+    margin-right: 2rem;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    /* color: #16213E; */
+}
+
+.nav-link:hover{
+    color: #AF0171 !important;
+    transition: ease 0.5s;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #49c5b6;
+}
+
+::ng-deep  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color:  #000;
+}
+

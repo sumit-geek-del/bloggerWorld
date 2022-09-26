@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.inner_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner_form_div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(171, 201, 255, 0.5);
+    padding: 10rem;
+    border-radius: 0.3rem;
+    width: 40vw;
+}
+
+.btn_div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.btn_div button{
+
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 8px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.form_field{
+    display: flex;
+    flex-direction: column;
+}
+.form_field input{
+    padding: 0.8rem;
+    border: 1px solid #9CB4CC;
+    border-radius: 0.4rem;
+    outline: none;
+    text-indent: 0.5rem;
+}
+label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    margin:1rem 0;
+    color: #2C3639;
+
+}
+
+.heading_div h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    font-size: 3.1rem !important;
+
+}
+
+::placeholder{
+    padding-left: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    color:#748DA6;
+    font-weight: 500;
+}
+
+h5{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+a{
+    text-decoration: none;
+}

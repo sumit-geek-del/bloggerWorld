@@ -1,0 +1,33 @@
+
+    <div class="inner_div">
+        <form [formGroup]="signUpForm">
+            <div class="inner_form_div">
+
+                <div class="heading_div">
+                    <h1>Create your free account</h1>
+                </div>
+                
+
+                <div class="form_field">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Name" formControlName="name" autocomplete="off">
+                <label for="email">Email Address</label>
+                <input id="email" type="email" placeholder="E-mail" formControlName="emailId" autocomplete="off">
+                <label for="password">Password</label>
+                <input id="password" type="text" placeholder="********" formControlName="password" autocomplete="off">
+                <label for="password">Confirm Password</label>
+                <input id="password" type="text" placeholder="********" formControlName="cnfPassword" autocomplete="off">
+                </div>
+                <div class="btn_div">
+                    <div >
+                        <button type="button" (click)="signUpFormValue(signUpForm)">Sign me Up</button>
+                    </div>
+
+                    <div>
+                        <h5>Have an account? <span><a href="javascript:void(0)" (click)="loginRoute()">Sign In</a></span></h5>
+                    </div>  
+                </div>
+                
+            </div>
+        </form>
+    </div>

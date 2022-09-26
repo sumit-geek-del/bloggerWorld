@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.heading_div{
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+
+.heading_div h1{
+    color: #000;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    
+}
