@@ -1,8 +1,4 @@
-@import '~quill/dist/quill.core.css';
-@import '~quill/dist/quill.bubble.css';
-@import '~quill/dist/quill.snow.css';
-
-
+@import '~animate.css/animate.min';
 *{
     margin: 0;
     padding: 0;
@@ -16,4 +12,5 @@ html{
 
 html, body{
     height: 100%;
+    background: linear-gradient(114.9deg, rgb(34, 34, 34) 8.3%, rgb(0, 40, 60) 41.6%, rgb(0, 143, 213) 93.4%);
 }

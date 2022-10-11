@@ -11,16 +11,39 @@
                 <div class="form_field">
                 <label for="name">Name</label>
                 <input id="name" type="text" placeholder="Name" formControlName="name" autocomplete="off">
+                <div *ngIf="signUpForm.get('name')?.errors?.['pattern']" style="margin-top:5px">
+                    <span class="warning">Name Should Not contain any numbers*</span>
+                </div>
+
+                <div *ngIf="signUpForm.get('name')?.errors?.['required'] && signUpForm.get('name')?.touched" style="margin-top:5px">
+                    <span class="warning">Name is Required*</span>
+                </div>
                 <label for="email">Email Address</label>
                 <input id="email" type="email" placeholder="E-mail" formControlName="emailId" autocomplete="off">
+                <div *ngIf="signUpForm.get('emailId')?.errors?.['pattern']" style="margin-top:5px">
+                    <span class="warning">Please Enter Valid Email *</span>
+                </div>
+
+                <div *ngIf="signUpForm.get('emailId')?.errors?.['required'] && signUpForm.get('emailId')?.touched" style="margin-top:5px">
+                    <span class="warning">Email is Required *</span>
+                </div>
+
                 <label for="password">Password</label>
                 <input id="password" type="text" placeholder="********" formControlName="password" autocomplete="off">
+
+                <div *ngIf="signUpForm.get('password')?.errors?.['pattern']" style="margin-top:5px">
+                    <span class="warning">Password should Contain an Uppercase, a number, lowercase characters and special characters</span>
+                </div>
+
+                <div *ngIf="signUpForm.get('password')?.errors?.['required'] && signUpForm.get('password')?.touched" style="margin-top:5px">
+                    <span class="warning">Password is Required*</span>
+                </div>
                 <label for="password">Confirm Password</label>
-                <input id="password" type="text" placeholder="********" formControlName="cnfPassword" autocomplete="off">
+                <input id="password" type="text" placeholder="********" formControlName="cnfPassword" autocomplete="off" (input)="checkPassword($event)">
                 </div>
                 <div class="btn_div">
                     <div >
-                        <button type="button" (click)="signUpFormValue(signUpForm)">Sign me Up</button>
+                        <button type="button" [disabled]="signUpForm.invalid || !signUpForm.dirty || signUpForm.pristine || !signUpForm.touched || !confirmPassword" (click)="signUpFormValue(signUpForm)">Sign me Up</button>
                     </div>
 
                     <div>

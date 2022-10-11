@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle'
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
+import { BlogInterceptor } from './Shared/blog.interceptor';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,13 @@ import { SignupComponent } from './signup/signup.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide:HTTP_INTERCEPTORS, useClass:BlogInterceptor, multi:true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

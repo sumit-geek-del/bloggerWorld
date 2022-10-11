@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 .inner_div{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 7rem;
+    
+    
 }
 
 .inner_form_div{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(171, 201, 255, 0.5);
+    /* background: linear-gradient(to top, rgb(9, 32, 63) 0%, rgb(83, 120, 149) 100%);
+     */
+    
+    background-color: #fff;
     padding: 10rem;
-    border-radius: 0.3rem;
+    border-radius: 0.4rem;
     width: 40vw;
-}
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+     */
 
+     /* box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25); */
+     box-shadow: 8.0px 16.0px 16.0px hsla(0, 10%, 10%, 0.8);
+    
+}
 .btn_div{
     display: flex;
     justify-content: space-between;
@@ -64,16 +72,17 @@ button:not([disabled]):hover {
 }
 .form_field input{
     padding: 0.8rem;
-    border: 1px solid #9CB4CC;
-    border-radius: 0.4rem;
+    border: 0;
+    border-bottom: 1px solid #9CB4CC;
+    /* border-radius: 0.4rem; */
     outline: none;
-    text-indent: 0.5rem;
+    text-indent: 0.8rem;
 }
 label{
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     margin:1rem 0;
-    color: #2C3639;
+    /* color: #fcfefe; */
 
 }
 
@@ -81,6 +90,10 @@ label{
     font-family: 'Poppins', sans-serif;
     font-weight: 550;
     font-size: 3.1rem !important;
+    /* color: #fff; */
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+
 
 }
 
@@ -94,7 +107,30 @@ label{
 h5{
     font-size: 1.5rem;
     margin-top: 1rem;
+    /* color: #fff; */
 }
 a{
     text-decoration: none;
 }
+
+.warning{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.warning_div{
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+    flex-direction: column;
+    align-items: end;
+    top: -17px;
+    right: 4px;
+}
+
+.warning_div i{
+    color:red;
+}
+
+

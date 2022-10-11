@@ -10,15 +10,43 @@
 
                 <div class="form_field">
                 <label for="email">Email Address</label>
-                <input id="email" type="email" placeholder="E-mail" formControlName="emailId" autocomplete="off">
+                <i style="position: relative;
+                top: 25px;" class="fa fa-envelope" aria-hidden="true"></i>
+                <input autofocus id="email" type="email" placeholder="E-mail" formControlName="emailId" autocomplete="off">
+                <div *ngIf="loginForm.get('emailId')?.errors?.['pattern']" class="warning_div">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span class="warning">Please Enter Valid Email</span>
+                </div>
+
+                <div *ngIf="loginForm.get('emailId')?.errors?.['required'] && loginForm.get('emailId')?.touched" class="warning_div">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <span class="warning">Required</span>
+                </div>
+
                 <label for="password">Password</label>
-                <input id="password" type="text" placeholder="********" formControlName="password" autocomplete="off">
+                <i style="position: relative;
+                top: 25px;" class="fa fa-key" aria-hidden="true"></i>
+                <input id="password" type="password" style="-webkit-text-security: square;" placeholder="********" formControlName="password" autocomplete="off">
+
+               
+
+                <div *ngIf="loginForm.get('password')?.errors?.['pattern']" class="warning_div">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                    <span class="warning">Password should Contain an Uppercase, a number, lowercase characters and special characters</span>
+                </div>
+
+                <div *ngIf="loginForm.get('password')?.errors?.['required'] && loginForm.get('password')?.touched" class="warning_div">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <span class="warning">Required</span>
+                </div>
+
                 </div>
                 
+               
 
                 <div class="btn_div">
                     <div >
-                        <button type="button" (click)="loginFormValue(loginForm)">Log In</button>
+                        <button type="button" [disabled]="loginForm.invalid || !loginForm.dirty || loginForm.pristine || !loginForm.touched" (click)="loginFormValue(loginForm)">Log In</button>
                     </div>
 
                     <div>
