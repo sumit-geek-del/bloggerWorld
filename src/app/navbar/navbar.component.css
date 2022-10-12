@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&display=swap');
+
 
 
 .navbar-brand{
@@ -9,7 +11,7 @@
     padding: 2rem 0;
     font-family: 'Montserrat', sans-serif;
     /* color: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
-    color: #319DA0;
+    color: #fff;
 }
 
 .white_color{
@@ -26,8 +28,11 @@
     font-size: 2rem;
     margin-right: 2rem;
     font-weight: 400;
-    font-family: 'Nunito Sans', sans-serif;
-    /* color: #16213E; */
+    /* font-family: 'Nunito Sans', sans-serif; */
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    letter-spacing: 1.4px;
 }
 
 .nav-link:hover{
@@ -43,3 +48,7 @@
     background-color:  #000;
 }
 
+.navbar{
+    /* background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%); */
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}

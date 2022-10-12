@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 .inner_div{
     display: flex;
     justify-content: center;
@@ -13,19 +14,11 @@
 .inner_form_div{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    /* background: linear-gradient(to top, rgb(9, 32, 63) 0%, rgb(83, 120, 149) 100%);
-     */
-    
     background-color: #fff;
     padding: 10rem;
     border-radius: 0.4rem;
-    width: 40vw;
-    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-     */
-
-     /* box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25); */
-     box-shadow: 8.0px 16.0px 16.0px hsla(0, 10%, 10%, 0.8);
+    width: 63vw;
+    box-shadow: 8.0px 16.0px 16.0px hsla(0, 10%, 10%, 0.8);
     
 }
 .btn_div{
@@ -87,12 +80,13 @@ label{
 }
 
 .heading_div h1{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 550;
-    font-size: 3.1rem !important;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 2.8rem !important;
     /* color: #fff; */
     text-transform: uppercase;
     letter-spacing: 0.6px;
+    color: #FC427B;
 
 
 }
@@ -132,5 +126,11 @@ a{
 .warning_div i{
     color:red;
 }
+.image_div{
+    display: flex;
+}
 
+.image_div img{
+    width: 68%;
+}
 

@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg " [ngClass]="mode=='Dark'?'bg-light':'navbar-dark bg-dark'">
+<nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Blogger World</a>
+      <!-- <a class="navbar-brand" href="#">Blogger World</a> -->
+      <img style="width: 15%;margin-top: 10px;margin-left: 18px;" src="../../assets/Drawing.png" alt="">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -17,7 +18,6 @@
           </li>
      
         </ul>
-        <mat-slide-toggle  (change)="changeMode($event)" [ngClass]="mode=='Dark'?'black_color':'white_color'">{{mode}} Mode</mat-slide-toggle>
       </div>
     </div>
   </nav>
